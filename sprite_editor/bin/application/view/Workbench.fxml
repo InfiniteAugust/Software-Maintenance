@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.WorkbenchController">
+   <children>
+      <SplitPane dividerPositions="0.6829573934837093" layoutX="140.0" layoutY="105.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane fx:id="canvasArea" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Canvas fx:id="canvas" height="200.0" layoutX="100.0" layoutY="100.0" onContextMenuRequested="#handleCanvas" onDragDetected="#handleCanvas" onDragDone="#handleCanvas" onDragDropped="#handleCanvas" onDragEntered="#handleCanvas" onDragExited="#handleCanvas" onDragOver="#handleCanvas" onInputMethodTextChanged="#handleCanvas" onKeyPressed="#handleCanvas" onKeyReleased="#handleCanvas" onKeyTyped="#handleCanvas" onMouseClicked="#handleCanvas" onMouseDragEntered="#handleCanvas" onMouseDragExited="#handleCanvas" onMouseDragOver="#handleCanvas" onMouseDragReleased="#handleCanvas" onMouseDragged="#handleCanvas" onMouseEntered="#handleCanvas" onMouseExited="#handleCanvas" onMouseMoved="#handleCanvas" onMousePressed="#handleCanvas" onMouseReleased="#handleCanvas" onScroll="#handleCanvas" onScrollFinished="#handleCanvas" onScrollStarted="#handleCanvas" width="200.0" />
+                  <Canvas fx:id="background" height="200.0" layoutX="100.0" layoutY="100.0" onContextMenuRequested="#handleBackground" onDragDetected="#handleBackground" onDragDone="#handleBackground" onDragDropped="#handleBackground" onDragEntered="#handleBackground" onDragExited="#handleBackground" onDragOver="#handleBackground" onInputMethodTextChanged="#handleBackground" onKeyPressed="#handleBackground" onKeyReleased="#handleBackground" onKeyTyped="#handleBackground" onMouseDragEntered="#handleBackground" onMouseDragExited="#handleBackground" onMouseDragOver="#handleBackground" onMouseDragReleased="#handleBackground" width="200.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ColorPicker fx:id="theColorPicker" layoutX="27.0" layoutY="61.0" onAction="#handleColorPicker" />
+                  <Label layoutX="27.0" layoutY="35.0" text="pick a color to draw:" />
+                  <ColorPicker fx:id="theColorPickerBG" layoutX="27.0" layoutY="152.0" onAction="#handleColorPickerBG" />
+                  <Label layoutX="27.0" layoutY="128.0" text="pick a color for background:" />
+                  <Button fx:id="newCanvas" layoutX="27.0" layoutY="249.0" mnemonicParsing="false" onAction="#handleNewCanvas" text="32*32" />
+                  <Button fx:id="newCanva64" layoutX="27.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleNewCanvas64" text="64*64" />
+                  <Label layoutX="27.0" layoutY="221.0" text="Select size for canvas:" />
+                  <Button fx:id="newCanva128" layoutX="27.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleNewCanvas128" text="128*128" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
