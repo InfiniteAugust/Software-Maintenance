@@ -1,4 +1,4 @@
-# Software-Maintenance
+# Software Maintenance
 ## Sprite Editor
 Run by double click sprite_editor.jar under directory ./bin
 
@@ -7,7 +7,7 @@ This editor supports changing background. You can save your work.
 You can load a png file from a specified directory, but since the loaded picture's background is not transparent, once loaded, the whole canvas will be covered.
 
 ## Space Invaders
-My works are modifications based on the original software.
+My works are modifications based on the original software. Therefore Software Maintenance.
 
 The original software is space invaders. Assets used in the game can be found [here](http://gooperblooper22.deviantart.com/art/Space-Invaders-Sprite-Sheet-135338373).
 
