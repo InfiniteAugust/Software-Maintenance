@@ -2,7 +2,7 @@
 ## Sprite Editor
 Run by double click sprite_editor.jar under directory ./bin
 
-This editor supports changing background, however, background cannot be saved while only the painted content can be saved.
+This editor supports changing background. You can save your work.
 
 You can load a png file from a specified directory, but since the loaded picture's background is not transparent, once loaded, the whole canvas will be covered.
 
