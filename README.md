@@ -9,7 +9,7 @@ You can load a png file from a specified directory, but since the loaded picture
 ## Space Invaders
 My works are modifications based on the original software.
 
-A space invaders clone. Assets used in the game can be found [here](http://gooperblooper22.deviantart.com/art/Space-Invaders-Sprite-Sheet-135338373).
+The original software is space invaders. Assets used in the game can be found [here](http://gooperblooper22.deviantart.com/art/Space-Invaders-Sprite-Sheet-135338373).
 
 to launch the modified Space Invader:
 1. import the project into eclipse workspace 
